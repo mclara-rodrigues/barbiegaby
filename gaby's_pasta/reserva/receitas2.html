@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receitas da Moranguinho 🍓</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --rosa-claro: #ffe0ec;
+      --rosa: #ff6fa4;
+      --rosa-escuro: #ff98bb;
+      --verde-menta: #c2f2d0;
+      --branco: #fff;
+      --fonte-titulo: 'Pacifico', cursive;
+      --fonte-corpo: 'Quicksand', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--fonte-corpo);
+      background-color: var(--rosa-claro);
+      color: #4a4a4a;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--rosa);
+      padding: 2rem;
+      text-align: center;
+      color: var(--branco);
+      font-family: var(--fonte-titulo);
+      font-size: 3rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      background-color: var(--rosa-escuro);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: var(--branco);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: var(--verde-menta);
+      color: var(--rosa-escuro);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .intro h2 {
+      font-family: var(--fonte-titulo);
+      font-size: 2.5rem;
+      color: var(--rosa-escuro);
+    }
+
+    .receitas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: var(--branco);
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1.2rem;
+    }
+
+    .card-title {
+      font-family: var(--fonte-titulo);
+      color: var(--rosa);
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-content p {
+      font-size: 1rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    .sobre,
+    .contato {
+      background-color: var(--branco);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: var(--rosa-escuro);
+      text-align: center;
+      color: var(--branco);
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Receitas da Moranguinho 🍓
+  </header>
+
+  <nav>
+    <a href="#home">Início</a>
+    <a href="#receitas">Receitas</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main class="container">
+
+    <section id="home" class="intro">
+      <h2>Bem-vindo ao mundo doce da Moranguinho!</h2>
+      <p>Descubra receitas encantadas com morangos, amor e um toque de magia do Bosque dos Doces.</p>
+    </section>
+
+    <section id="receitas">
+      <h2 class="intro">Receitinhas Deliciosas 🍰</h2>
+        <div class="receitas-grid">
+          <a href="/projeto_receitas/bicoitos_pop.html">
+            <div class="card">
+              <img src=https://i.pinimg.com/736x/32/38/b5/3238b5f1264a0df9838bcab3d79e7e3d.jpg" alt="Bolo de morango">
+              <div class="card-content">
+                <h3 class="card-title">Biscoitos pops</h3>
+                <p>Feito com camadas de morango, chantilly e carinho. Ideal para festas mágicas!</p>
+              </div>
+            </div>
+          </a>
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1541976844346-f18aeac57b06" alt="Torta rosa">
+            <div class="card-content">
+              <h3 class="card-title">Tortinha das Fadas</h3>
+              <p>Recheio cremoso e base crocante com morangos doces. Um sonho de sabor!</p>
+          </div>
+          </div>
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1605478031739-f08025f21047" alt="Cupcakes">
+            <div class="card-content">
+              <h3 class="card-title">Cupcakes da Moranguinho</h3>
+              <p>Coloridos, fofos e cobertos com creme rosa e confeitos mágicos.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <h2 class="card-title">Sobre a Moranguinho</h2>
+      <p>A Moranguinho é uma doce amiga que adora cozinhar e compartilhar receitas com todos os habitantes do Bosque dos Doces. Suas receitas são feitas com frutas fresquinhas, muita criatividade e um toque de magia!</p>
+    </section>
+
+    <section id="contato" class="contato">
+      <h2 class="card-title">Fale com a Gente 💌</h2>
+      <p>Quer enviar uma receita ou mandar um recadinho? Escreva para: <strong>contato@receitasdamoranguinho.com</strong></p>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 Receitas da Moranguinho. Feito com amor e morangos 🍓
+  </footer>
+
+</body>
+</html>
